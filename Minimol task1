@@ -1,0 +1,94 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "97934c9b-bfc9-4f21-8ecb-9f7693f260a4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "updated list: [10, 2, 'hi', 4, 5, 6]\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_list = [1,2,3,4,5]\n",
+    "my_list.append(6)\n",
+    "my_list.remove(3)\n",
+    "my_list[0] = 10\n",
+    "my_list.insert(2, \"hi\")\n",
+    "print(\"updated list:\", my_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "b1a1db81-80a0-41db-95a2-ccfe58e5e1c3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "updated Dictionary: {'name': 'minimol', 'city': 'Bangalore', 'gender': 'Female'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_dict = {'name': 'minimol','age': 20,'city': 'Delhi'}\n",
+    "my_dict['gender'] = 'Female'\n",
+    "del my_dict['age']\n",
+    "my_dict['city'] = 'Bangalore'\n",
+    "print(\"updated Dictionary:\" , my_dict)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "064d4e74-b2f9-474d-b117-cef25f10b71f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 2, 5)\n"
+     ]
+    }
+   ],
+   "source": [
+    "original_tuple = (1,2,3)\n",
+    "new_element = 4\n",
+    "updated_tuple = original_tuple + (new_element,)\n",
+    "updated_tuple = original_tuple[:1] + original_tuple[2:]\n",
+    "modified_element = 5\n",
+    "updated_tuple = original_tuple[:2] + (modified_element,) + original_tuple[3:]\n",
+    "print(updated_tuple)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
